@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity">
+
+    <TextView
+        android:id="@+id/label1_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Resigtro en BabyCare"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label1_registro">
+
+        <LinearLayout
+            android:id="@+id/layout1_cuidadores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/label2_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rellene los siguientes campos:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/caja1_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/caja2_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Apellidos"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/caja3_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="DNI"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/caja4_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Teléfono"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/caja5_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Fecha de nacimiento (DD/MM/AAAA)"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/caja6_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Dirección"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/caja7_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nacionalidad"
+                android:inputType="text" />
+
+            <RadioGroup
+                android:id="@+id/radio1_registro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radioHombre_registro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hombre" />
+
+                <RadioButton
+                    android:id="@+id/radioMujer_registro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mujer" />
+
+                <RadioButton
+                    android:id="@+id/radioOtros_registro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Otros (especifique en caja de texto)" />
+
+                <EditText
+                    android:id="@+id/caja8_registro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Escriba aquí"
+                    android:inputType="text" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/caja9_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nombre de usuario"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/caja10_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Correo electrónico"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/caja11_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/caja12_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Confirmar contraseña"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/boton1_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrarse" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/boton2_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Ayuda"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

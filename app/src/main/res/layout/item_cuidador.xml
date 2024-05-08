@@ -1,0 +1,75 @@
+<!-- perfil_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout1_cuidador"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24px"
+    android:layout_marginLeft="24px"
+    android:layout_marginTop="8px"
+    android:layout_marginEnd="24px"
+    android:layout_marginRight="24px"
+    android:layout_marginBottom="8px"
+    android:background="@color/material_dynamic_neutral90"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- ImageView para la foto del perfil -->
+
+    <!-- LinearLayout para contener el texto -->
+    <ImageView
+        android:id="@+id/image1_cuidador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8px"
+        android:layout_marginRight="8px"
+        android:layout_weight="1"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+    <LinearLayout
+        android:id="@+id/layout2_cuidador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8px"
+        android:layout_weight="2"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <!-- TextView para el nombre -->
+        <TextView
+            android:id="@+id/label1_cuidador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Nombre, edad"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/label2_cuidador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Experiencia"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/label3_cuidador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Disponibilidad"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/layout3_cuidador"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
+
+        <!-- Otros TextViews para mostrar la información del perfil -->
+        <!-- Puedes agregar más TextViews según sea necesario -->
+
+    </LinearLayout>
+</LinearLayout>
